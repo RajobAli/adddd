@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;0,900;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet"></head>
+  <!-- tailwind cdn -->
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css"/>
+  <!-- font awesome cdn -->
+ 
+
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+ <!-- local link :https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-RajobAli -->
+
+ <sectionone class="w-full md:flex m-auto justify-center items-center lg:gap-20 gap-10 p-10   bg-[#f9f6E2]">
+    <div>
+        <h5 class="text-center text-3xl">---SALE FEVER---</h5>
+        <h1 class="text-center text-5xl">Purchase TK 200 <br> or above & get <span id="text" class="">20% off</span></h1>
+         <input type="text" class="ml-40 lg:ml-16"  placeholder="Use Promo Code">
+          <button class=" justify-center -ml-10 lg:-ml-10 mt-4 btn"  id="btnn">SELL200</button> 
+   
+      
+         
+    </div>
+    <div>
+        <img class="w-60 items-center justify-center m-auto" src="Summer 1.png" alt="">
+    </div>
+
+ </sectionone>
+ <h1 class="text-4xl mb-4 mt-6 ml-40">Kitchenware</h1>
+
+ <sectiontwo class="w-11/12 items-center justify-center m-auto flex mt-8 gap-4 ">
+
+    
+    <div class="w-10/12 flex gap-4" >
+        <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divone">
+            <figure class="px-10 pt-10">
+              <img src="prod1.png" alt="Shoes" class="rounded-xl w-30 h-36"  />
+            </figure>
+            <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                <img src="rating.png" alt="">
+                <img src="rating.png" alt="">
+                <img src="rating.png" alt="">
+                <img src="ratingtwo.png" alt="">
+                <img src="ratingtwo.png" alt="">
+
+            </div>
+            <div class="card-body items-center text-center -mt-4">
+              <h2 class="card-title" id="name">K. Accessories</h2>
+              <h3  class="selected-items" id="selected-items"></h3>
+            
+              <p><span id="taka">390.00</span>TK</p>
+            
+              </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divtwo">
+              <figure class="px-10 pt-10">
+                <img src="prod2.png" alt="Shoes" class="rounded-xl w-30 h-36" id="pp" />
+              </figure>
+              <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+  
+              </div>
+              <div class="card-body items-center text-center -mt-4">
+                <h2 class="card-title" id="name1">K. Accessories</h2>
+                <p><span id="twotaka">50.00</span>TK</p>
+              
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divthree">
+              <figure class="px-10 pt-10">
+                <img src="prod3.png" alt="Shoes" class="rounded-xl w-30 h-36" id="pp" />
+              </figure>
+              <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+  
+              </div>
+              
+              <div class="card-body items-center text-center -mt-4">
+                <h2 class="card-title" id="name2">Home Cooker</h2>
+                <p><span id="threetaka">100.00</span>TK</p>
+              
+                </div>
+              </div>
+          
+        
+    </div>
+
+
+    <div class="w-4/12 text-4xl mx-auto">
+      <h1 class="text-4xl mb-4">Have coupon?</h1>
+      <input type="text mb-6" placeholder="Coupon code">
+      <button class="bg-[#E527B2;] text-xl p-4 -ml-40 mb-6" id="apply">Apply</button>
+
+      <h1 class="mb-6" id=""> <span id="totalprice"></span></h1>
+    
+      <h1 class="mb-6" id="ddd"> <span id="discount"> </span></span></h1>
+     <div id="countainers"></div>
+      <div id="container"></div>
+      <h1 class="mb-6">  <span id="totalppp"></span></h1>
+      <button class="bg-[#E527B2;] p-6" id="makepurces" >Make Purchase</button>
+    </div>
+ </sectiontwo>
+
+
+
+
+
+ <h1 class="text-4xl mb-4 mt-6 ml-40">Sportswear</h1> 
+  <sectionthree class="w-11/12 items-center justify-center flex m-auto  mt-8 gap-4 ">
+ 
+    
+    <div class="w-10/12 flex gap-4">
+        <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divfour">
+            <figure class="px-10 pt-10">
+              <img src="prod4.png" alt="Shoes" class="rounded-xl w-30 h-36" id="pp" />
+            </figure>
+            <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                <img src="rating.png" alt="">
+                <img src="rating.png" alt="">
+                <img src="rating.png" alt="">
+                <img src="ratingtwo.png" alt="">
+                <img src="ratingtwo.png" alt="">
+
+            </div>
+            <div class="card-body items-center text-center -mt-4">
+              <h2 class="card-title" id="name3">Cap</h2>
+              <p><span id="fourtaka">200.00</span>TK</p>
+            
+              </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divfive">
+              <figure class="px-10 pt-10">
+                <img src="prod5.png" alt="Shoes" class="rounded-xl w-30 h-36" id="pp" />
+              </figure>
+              <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+  
+              </div>
+              <div class="card-body items-center text-center -mt-4">
+                <h2 class="card-title" id="name4">Man</h2>
+                <p><span id="fivetaka">600.00</span>TK</p>
+              
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl  p-4 " id="divsix">
+              <figure class="px-10 pt-10">
+                <img src="prod6.png" alt="Shoes" class="rounded-xl w-30 h-36" id="pp" />
+              </figure>
+              <div class="h-6 w-6 flex justify-center text-center items-center m-auto mt-6">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="rating.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+                  <img src="ratingtwo.png" alt="">
+  
+              </div>
+              
+              <div class="card-body items-center text-center -mt-4">
+                <h2 class="card-title" id="name5">Shoes</h2>
+                <p><span id="sixtaka">390.00</span>TK</p>
+              
+                </div>
+              </div>
+          
+        
+    </div>
+
+
+    <div class="w-4/12"></div>
+
+
+ </sectionthree>
+
+ <section7>
+  <!-- The button to open modal -->
+<label for="my_modal_6" class="btn">open modal</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">This modal works with a hidden checkbox!</p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn">Close!</label>
+    </div>
+  </div>
+</div>
+ </section7>
+
+
+  <script src="index.js"></script>
+ 
+    
+</body>
+</html>
